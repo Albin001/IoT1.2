@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>mypage</title>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/tut1.css')}}" />
+    </head>
+    <body  background="{{url_for('static',filename='image/e4.png')}}">
+        <div class="n1">
+            <form action="http://127.0.0.1:5000/log" method="post">
+                <label> USER NAME </label>
+                <input type="text" name="yt" id="user" placeholder="Enter you  user name "/>
+                <br> <br>
+                <label> PASSWORD </label>
+                <input type="text" name="yt1" id="pass" placeholder="Enter your  Password" />
+                <br> <br>
+                <input type="submit" value="SUBMIT" />
+                <br> <br>
+                <input type="reset" value="RESET" />
+
+            </form>
+
+        </div>
+    </body>
+
+</html>
