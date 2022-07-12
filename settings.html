@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <link rel="stylesheet"  type="text/css"  href="{{url_for('static',filename='css/s1.css')}}" />
+</head>
+<body>
+<div class="e1">
+<form  method="post" action="http://127.0.0.1:5000/process" >
+    <label id="t1"> TEMPERATURE THRESHOLD</label>
+    <input type="text" name="number1" id="t3" placeholder="Enter Your Value" />
+    <br> <br>
+     <label id="t2"> WATER THRESHOLD</label>
+    <input type="text" name="number2" id="t4" placeholder="Enter Your Value" />
+    <br> <br>
+      <label id="t5"> MOISTURE THRESHOLD</label>
+    <input type="text" name="number3" id="t6" placeholder="Enter Your Value" />
+    <br> <br>
+    <input type="submit" value="SUBMIT" />
+    <br> <br>
+    <input type="reset" value="RESET" />
+</form>
+</div>
+</body>
+</html>
