@@ -1,0 +1,12 @@
+
+.n1
+{
+    background-color: lavender;
+    height:200px;
+    width:200px;
+    padding:50px;
+    border-radius: 2em;
+    position:fixed;
+    bottom:60px;
+    right:10px;
+}
