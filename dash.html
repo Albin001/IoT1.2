@@ -2,25 +2,61 @@
     <head>
         <title>mypage</title>
         <link rel="stylesheet"  type="text/css" href="{{url_for('static',filename='css/tut2.css')}}" />
-        <script>
-
+    <script type="text/javascript">
+        function load()
+        {
+        setTimeout("window.open('http://127.0.0.1:5000/dash', '_self','_self');", 1000);
+        }
         </script>
-    </head>
-    <body>
+       <style>
+ .n3>.n12
+{
 
-    <marquee> WELCOME TO DASHBOARD</marquee>
+    height:{{n4}};
+    background-color:wheat;
+    width:100px;
+    position:fixed;
+    bottom:100px;
+    text-align: center;
+}
+.n5>.n13
+{
+
+    height:{{n3}}px;
+    background-color: blue;
+    width:100px;
+    position:fixed;
+    bottom:100px;
+    text-align: center;
+}
+.n2>.n11
+{
+height:{{n5}}px;
+    background-color:red;
+    width:100px;
+    position:fixed;
+    bottom:100px;
+    text-align: center;
+}
+body
+{
+background-color:grey;
+}
+       </style>
+    </head>
+    <body onload="load()" >
     <div class="n2">
-      <div class="n11">50%</div>
+      <div class="n11">{{n5}}%</div>
     </div>
     <span class="i1">TEMPERATURE</span>
     <div class="n3">
-        <div class="n12">10%</div>
+        <div class="n12">{{n4}}%</div>
     </div>
     <span class="i2">MOISTURE</span>
 
 <div class="n4">
     <div class="n5">
-        <div class="n13">20%</div>
+        <div class="n13">{{n3}}%</div>
     </div>
     </div>
     <span class="i3">WATER</span>
